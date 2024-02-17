@@ -2,7 +2,7 @@ const process = require("process");
 const util = require("util");
 
 function decodeBencode(bencodedValue) {
-  // Check if the first character is a digit
+  
   if (!isNaN(bencodedValue[0])) {
     const firstColonIndex = bencodedValue.indexOf(":");
     if (firstColonIndex === -1) {
